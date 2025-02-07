@@ -28,6 +28,14 @@ In today's world of information overload, distinguishing between real and fake n
 - **Loading Indicator:**  Displays a progress bar while the news is being analyzed.
 
 ## Screenshots
+<div style="display: flex; flex-wrap: nowrap; gap: 10px; justify-content: space-evenly;">
+
+<img src="https://github.com/user-attachments/assets/a23d9427-108f-42b5-a117-725bbd195caf" alt="Splash Screen" width="110">
+<img src="https://github.com/user-attachments/assets/208b9774-44f8-4367-b1b1-49cbeb89d301" alt="Main Screen 1" width="110">
+<img src="https://github.com/user-attachments/assets/8222b7a6-9e2e-4f6f-ab0d-247fff7b230e" alt="Main Screen 2" width="110">
+<img src="https://github.com/user-attachments/assets/519c8da1-724b-4d38-bd94-552953c8b7ca" alt="Angry Behavior" width="110">
+<img src="https://github.com/user-attachments/assets/f07aa352-60a8-4f93-89af-ef8489ec3253" alt="Thor" width="110">
+</div>
 ![1738913105050](https://github.com/user-attachments/assets/a23d9427-108f-42b5-a117-725bbd195caf) ![1738913105035](https://github.com/user-attachments/assets/208b9774-44f8-4367-b1b1-49cbeb89d301) ![1738913105089](https://github.com/user-attachments/assets/8222b7a6-9e2e-4f6f-ab0d-247fff7b230e) ![1738913105078](https://github.com/user-attachments/assets/519c8da1-724b-4d38-bd94-552953c8b7ca) ![1738913105063](https://github.com/user-attachments/assets/f07aa352-60a8-4f93-89af-ef8489ec3253)
 
 * Example Screenshot 1: Input Screen
