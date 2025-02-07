@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Fake News</string>
+    <string name="action_go">Go</string>
+    <string name="baking_title">Baking with Gemini</string>
+    <string name="label_prompt">Prompt</string>
+    <string name="prompt_placeholder">Provide a recipe for the baked goods in the image</string>
+    <string name="image1_description">Cupcake</string>
+    <string name="image2_description">Cookies</string>
+    <string name="image3_description">Cake</string>
+    <string name="results_placeholder">(Results will appear here)</string>
+    <string name="splash_screen_image">Splash Screen Image</string>
+    <string name="check_news">Check News</string>
+    <string name="enter_date">Enter Date (dd/mm/yyyy)</string>
+    <string name="enter_subject">Enter Subject (Political, Weather, Sports, etc.)</string>
+    <string name="enter_news_text">Enter News Text (Content of News)</string>
+    <string name="enter_news_title">Enter News Title</string>
+    <string name="result_icon">Result Icon</string>
+</resources>

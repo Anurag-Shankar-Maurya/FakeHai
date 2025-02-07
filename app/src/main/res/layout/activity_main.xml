@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:autofillHints=""
+    tools:context=".MainActivity">
+
+    <!-- Title Input -->
+    <EditText
+        android:id="@+id/inputTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autofillHints="Title hints"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/enter_news_title"
+        android:inputType="textCapWords"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#D81B60"
+        android:textColorHint="@color/color_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Text Input -->
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/enter_news_text"
+        android:inputType="textMultiLine"
+        android:maxLines="6"
+        android:minLines="4"
+        android:padding="10dp"
+        android:textColor="#D81B60"
+        android:textColorHint="@color/color_secondary"
+        app:layout_constraintBottom_toTopOf="@+id/inputSubject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputTitle"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Subject Input -->
+    <EditText
+        android:id="@+id/inputSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autofillHints="Subject hints"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/enter_subject"
+        android:inputType="textCapWords"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#D81B60"
+        android:textColorHint="@color/color_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputText"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Button to Fake Check News -->
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_active_background"
+        android:elevation="8dp"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:shadowColor="#E91E63"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"
+        android:text="@string/check_news"
+        android:textColor="#FCE4EC"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputSubject" />
+
+    <!--progress bar indicator-->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_bar_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkButton" />
+
+    <!-- Graphical Result Indicator -->
+    <ImageView
+        android:id="@+id/resultIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/result_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

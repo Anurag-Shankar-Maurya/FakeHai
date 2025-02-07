@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    theme for splash screen-->
+    <style name="Theme.FakeNews.Splash" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here -->
+        <!-- Primary color for your app -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <!-- Secondary color for your app -->
+        <item name="colorSecondary">@color/color_secondary</item>
+        <!-- Set the status bar color to primary -->
+        <item name="android:statusBarColor">@color/color_primary</item>
+        <!-- Set navigation bar transparent -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <!-- Rounded corners for UI elements -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.FakeNews.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.FakeNews.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.FakeNews.LargeComponent</item>
+        <!-- Elevation for shadow effects -->
+        <item name="android:elevation">4dp</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!-- Base application theme with Material You (Material 3) -->
+    <style name="Theme.FakeNews" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here -->
+
+        <!-- Primary color for your app -->
+        <item name="colorPrimary">@color/color_primary</item>
+
+        <!-- Secondary color for your app -->
+        <item name="colorSecondary">@color/color_secondary</item>
+
+        <!-- Set the status bar color to primary -->
+        <item name="android:statusBarColor">@color/color_primary</item>
+
+        <!-- Set navigation bar transparent -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <!-- Rounded corners for UI elements -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.FakeNews.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.FakeNews.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.FakeNews.LargeComponent</item>
+
+        <!-- Elevation for shadow effects -->
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Shape appearance definitions -->
+    <style name="ShapeAppearance.FakeNews.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.FakeNews.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.FakeNews.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>
