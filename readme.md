@@ -1,97 +1,70 @@
-# FakeHai - Fake News Detection App
+# FakeHai: An Android Application for Fake News Detection
 
-## Overview
-**FakeHai** is an Android application developed using **Kotlin and XML** that detects whether a given news article is fake or real. The app leverages **Google's Gemini API** to perform deep analysis of news articles based on their title, content, subject, and date.
+FakeHai is an Android application designed to help users identify potentially fake news.  It leverages the power of Google's Gemini API to analyze news articles and determine their veracity.  Users input the title, text, and subject of a news item, and FakeHai uses this information to assess the likelihood of it being genuine or fake.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Key](#api-key)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Introduction
+
+In today's world of information overload, distinguishing between real and fake news can be challenging. FakeHai aims to simplify this process by providing a user-friendly interface to quickly check the credibility of news articles.  By utilizing the advanced capabilities of the Gemini API, FakeHai analyzes the provided information and returns a result indicating whether the news is likely to be fake or real.
 
 ## Features
-- **AI-Powered Fake News Detection**: Analyzes news articles using Gemini API.
-- **User Input Fields**: Allows users to input news title, text, subject, and date.
-- **Real-time Analysis**: Provides instant feedback on the credibility of news.
-- **Graphical Representation**: Displays results in a visually appealing manner.
-- **Modern UI**: Designed using **Material3** theme for a sleek and responsive user interface.
-- **Deep Search**: Performs thorough fact-checking to verify authenticity.
+
+- **Easy-to-use Interface:**  A simple and intuitive interface allows users to easily input news details.
+- **Gemini API Integration:** Leverages the Gemini API for accurate and efficient fake news detection.
+- **Real-time Results:** Provides quick feedback on the likelihood of the news being fake.
+- **Clear Visual Indicators:** Uses clear visual cues (icons) to represent the result (fake or real).
+- **Subject Categorization:** Allows users to specify the subject of the news (e.g., political, sports, etc.) for more accurate analysis.
+- **Loading Indicator:**  Displays a progress bar while the news is being analyzed.
+
+## Screenshots
+
+(Include screenshots of your app here.  Show the input screen, the loading screen, and the results screen with both "fake" and "real" indicators.  You can use `fastlane supply` or similar tools to automate screenshot generation.)
+
+* Example Screenshot 1: Input Screen
+* Example Screenshot 2: Loading Screen
+* Example Screenshot 3: Real News Result
+* Example Screenshot 4: Fake News Result
 
 ## Technologies Used
-- **Language**: Kotlin
-- **UI Framework**: XML (Material3 UI Components)
-- **API**: Google Gemini API
-- **Architecture**: MVVM (Model-View-ViewModel)
-- **Database**: Room (for storing past searches)
-- **Dependency Injection**: Dagger/Hilt (optional)
+
+- **Android SDK:**  For building the Android application.
+- **Kotlin:**  The primary programming language used.
+- **Android Studio:**  The IDE used for development.
+- **Google Gemini API:**  For fake news detection.
+- **ConstraintLayout:** For layout design.
 
 ## Installation
-1. Clone this repository:
-   ```sh
-   git clone https://github.com/yourusername/FakeHai.git
-   ```
-2. Open the project in **Android Studio**.
-3. Sync Gradle files and ensure dependencies are installed.
-4. Obtain an API key from Google Gemini API and add it to `local.properties`:
-   ```properties
-   GEMINI_API_KEY=your_api_key_here
-   ```
-5. Build and run the application on an emulator or physical device.
+
+1. Clone the repository: `git clone https://github.com/Anurag-Shankar-Maurya/FakeHai.git`
+2. Open the project in Android Studio.
+3. Add your Gemini API key (see [API Key](#api-key) section below).
+4. Build and run the application on an Android emulator or device.
 
 ## Usage
-1. Open the app and enter the **news title**, **content**, **subject**, and **date**.
-2. Click the **Check News** button.
-3. The app will analyze the article and display whether it is **Fake or Real**.
-4. View graphical representations of credibility scores.
 
-## Folder Structure
-```
-FakeHai/
-│-- app/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/babumusai/fakehai/
-│   │   │   │   ├── ui/        # UI-related files (Activities, Fragments)
-│   │   │   │   ├── data/      # Data sources (API, Room DB, Repository)
-│   │   │   │   ├── viewmodel/ # ViewModel for managing UI state
-│   │   │   │   ├── utils/     # Utility functions and helpers
-│   │   │   ├── res/
-│   │   │   │   ├── layout/    # XML layouts
-│   │   │   │   ├── values/    # Colors, strings, styles
-│-- build.gradle
-│-- local.properties
-│-- README.md
-```
+1. Enter the title of the news article in the "Enter News Title" field.
+2. Enter the content/text of the news article in the "Enter News Text" field.
+3. Select the subject category of the news (e.g., political, sports, etc.) in the "Enter Subject" field.
+4. Click the "Check News" button.
+5. The app will display a loading indicator while processing.
+6. The result will be displayed with a corresponding icon (a checkmark for real news, and potentially an "X" or other indicator for fake news).
 
-## API Integration
-The app uses the **Google Gemini API** to analyze news credibility. The request format is:
-```json
-{
-  "title": "News Title",
-  "text": "Full News Content",
-  "subject": "Category of News",
-  "date": "YYYY-MM-DD"
-}
-```
-Response:
-```json
-{
-  "status": "Fake/Real",
-  "confidence": 92.5
-}
-```
+## API Key
 
-## Future Enhancements
-- **Multi-language support**.
-- **Improved NLP techniques for better accuracy**.
-- **Integration with fact-checking databases**.
-- **User authentication for personalized history tracking**.
+This application requires a Google Gemini API key.  You can obtain one by following the instructions on the Google AI website.  **Replace `YOUR_API_KEY` in the `BuildConfig.kt` file with your actual API key.**  Do not commit your API key to the repository.
 
-## Contributing
-Contributions are welcome! If you'd like to contribute:
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature-name`
-3. Commit changes: `git commit -m 'Add new feature'`
-4. Push to branch: `git push origin feature-name`
-5. Submit a pull request.
-
-## License
-This project is licensed under the **MIT License**.
-
-## Contact
-For any queries, feel free to reach out at **your.email@example.com** or visit the [GitHub Repository](https://github.com/yourusername/FakeHai).
-
+```kotlin
+// In BuildConfig.kt
+buildConfigField("String", "apiKey", "YOUR_API_KEY") // Replace with your actual key
