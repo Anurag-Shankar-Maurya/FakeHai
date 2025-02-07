@@ -12,7 +12,6 @@ FakeHai is an Android application designed to help users identify potentially fa
 - [Usage](#usage)
 - [API Key](#api-key)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Introduction
@@ -68,3 +67,12 @@ This application requires a Google Gemini API key.  You can obtain one by follow
 ```kotlin
 // In BuildConfig.kt
 buildConfigField("String", "apiKey", "YOUR_API_KEY") // Replace with your actual key
+```
+
+## Contributing
+
+Contributions are welcome!  Please feel free to submit pull requests or open issues to suggest improvements or report bugs.
+
+## Contact
+
+Anurag Shankar Maurya - [anuragshankarmaurya@gmail.com](anuragshankarmaurya@gmail.com) - [LinkedIn Profile](https://www.linkedin.com/in/anurag-shankar-maurya/)
